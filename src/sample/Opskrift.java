@@ -76,15 +76,36 @@ public class Opskrift {
         ingredienser.add("Citron");
     }
 
-    //Gennem løb af arrayet ved hjælp af for løkke
+
     public void visIngredienser() {
 
-        for (int i = 0; i < ingredienser.size(); i++) {
 
-            System.out.println(ingredienser.get(i));
+            System.out.println("Du skal til glasur bruge:\n" + "- Flormelis\n" + "- Vand");
+            System.out.println("Du skal til te bruge:\n" + "- Te\n" + "- Vand\n" + "- Citron\n" + "- Sukker\n");
+            //Gennemløb af en array
+            for (int i = 0; i < ingredienser.size(); i++) {
+
+                System.out.println(ingredienser.get(i));
 
         }
 
 
     }
+
+    public void visFremgangsmaade(){
+
+        System.out.println("Opskriften for glasur:\n" + "Du blander formelis og sukker, og smører det på kagen");
+
+        System.out.println("Opskriften for for te:\n" + "Put teen i kogende vand, ");
+
+    }
+
+    public void visOpskrift(){
+
+
+        visIngredienser();
+        visFremgangsmaade();
+    }
+
+
 }

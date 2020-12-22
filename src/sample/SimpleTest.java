@@ -32,7 +32,7 @@ public class SimpleTest {
         System.out.println("* Viser opskrifter *");
         System.out.println("************************\n");
 
-        System.out.println("Du skal til glasur bruge:\n");
+        glasurOpskrift.visIngredienser();
 
 
     }
