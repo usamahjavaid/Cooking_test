@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 
 
-public class Opskrift {
+public class Opskrift implements KalorierBeregner {
     //data fields
     String navn;
     String navn2;
@@ -80,19 +80,19 @@ public class Opskrift {
     public void visIngredienser() {
 
 
-            System.out.println("Du skal til glasur bruge:\n" + "- Flormelis\n" + "- Vand \n");
-            System.out.println("Du skal til te bruge:\n" + "- Te\n" + "- Vand\n" + "- Citron\n" + "- Sukker\n");
-            //Gennemløb af en array
-            for (int i = 0; i < ingredienser.size(); i++) {
+        System.out.println("Du skal til glasur bruge:\n" + "- Flormelis\n" + "- Vand \n");
+        System.out.println("Du skal til te bruge:\n" + "- Te\n" + "- Vand\n" + "- Citron\n" + "- Sukker\n");
+        //Gennemløb af en array
+        for (int i = 0; i < ingredienser.size(); i++) {
 
-                System.out.println(ingredienser.get(i));
+            System.out.println(ingredienser.get(i));
 
         }
 
 
     }
 
-    public void visFremgangsmaade(){
+    public void visFremgangsmaade() {
 
         System.out.println("Opskriften for glasur:\n" + "Du blander formelis og sukker, og smører det på kagen\n");
 
@@ -100,7 +100,7 @@ public class Opskrift {
 
     }
 
-    public void visOpskrift(){
+    public void visOpskrift() {
 
         visIngredienser();
 
@@ -108,6 +108,18 @@ public class Opskrift {
     }
 
 
+    @Override
+    public void kalorieriAlt() {
+
+        ingredienser.add(0, "Vand");
+        ingredienser.add(20, "Te");
+        ingredienser.add(120, "sukker");
+
+        for (int i = 0; i < ingredienser.size(); i++) {
 
 
+            System.out.println(ingredienser.get(i));
+
+        }
+    }
 }

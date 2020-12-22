@@ -1,6 +1,6 @@
 package sample;
 
-public class Ingrediens {
+public class Ingrediens implements KalorierBeregner {
     //Datafields
     String navn;
     String flormelis;
@@ -9,6 +9,7 @@ public class Ingrediens {
     String vand2;
     String citron;
     int kalorier;
+    int kalorierIalt;
 
 
     //Constructor
@@ -42,11 +43,16 @@ public class Ingrediens {
 
         if (kalorier > 100) {
 
-            System.out.println("Sukker er rig på kalorier");
+            System.out.println("Sukker er rig på kalorier\n");
 
-        }else System.out.println("Citron er ikke rig på kalorier");
+        }else System.out.println("Citron er ikke rig på kalorier\n");
 
 
         return null;
+    }
+
+    @Override
+    public void kalorieriAlt() {
+        return kalorierIalt;
     }
 }
