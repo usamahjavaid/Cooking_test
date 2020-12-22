@@ -8,6 +8,9 @@ public class SimpleTest {
 
 
         System.out.println("Velkommen til min opskrifts-applikation-dummy\n" );
+        System.out.println("************************");
+        System.out.println("* Opretter opskrifter *");
+        System.out.println("************************\n");
 
         Opskrift glasurOpskrift = new Opskrift();
         System.out.println(glasurOpskrift.navn);
@@ -25,9 +28,11 @@ public class SimpleTest {
         Ingrediens citron = new Ingrediens();
         System.out.println(citron.citron);
 
+        System.out.println("************************");
+        System.out.println("* Viser opskrifter *");
+        System.out.println("************************\n");
 
-
-
+        System.out.println("Du skal til glasur bruge:\n");
 
 
     }
