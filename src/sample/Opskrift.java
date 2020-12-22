@@ -80,7 +80,7 @@ public class Opskrift {
     public void visIngredienser() {
 
 
-            System.out.println("Du skal til glasur bruge:\n" + "- Flormelis\n" + "- Vand");
+            System.out.println("Du skal til glasur bruge:\n" + "- Flormelis\n" + "- Vand \n");
             System.out.println("Du skal til te bruge:\n" + "- Te\n" + "- Vand\n" + "- Citron\n" + "- Sukker\n");
             //Gennemløb af en array
             for (int i = 0; i < ingredienser.size(); i++) {
@@ -94,9 +94,9 @@ public class Opskrift {
 
     public void visFremgangsmaade(){
 
-        System.out.println("Opskriften for glasur:\n" + "Du blander formelis og sukker, og smører det på kagen");
+        System.out.println("Opskriften for glasur:\n" + "Du blander formelis og sukker, og smører det på kagen\n");
 
-        System.out.println("Opskriften for for te:\n" + "Put teen i kogende vand, ");
+        System.out.println("Opskriften for for te:\n" + "Put teen i kogende vand\n ");
 
     }
 
