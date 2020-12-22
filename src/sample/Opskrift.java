@@ -102,10 +102,12 @@ public class Opskrift {
 
     public void visOpskrift(){
 
-
         visIngredienser();
+
         visFremgangsmaade();
     }
+
+
 
 
 }

@@ -34,6 +34,14 @@ public class SimpleTest {
 
         glasurOpskrift.visOpskrift();
 
+        System.out.println("************************");
+        System.out.println("* Kalorieberegning *");
+        System.out.println("************************\n");
+
+        Ingrediens sukker = new Ingrediens();
+        sukker.setKalorier(113);
+        sukker.rigPaaKalorier();
+
 
     }
 
